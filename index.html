@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>As-Salam CGL</title>
+	<style type="text/css">
+		html, body {
+			background-color: #111;
+			text-align: center;
+			margin: 0 !important;
+    		padding: 0 !important;
+			overflow: hidden;
+		}
+	</style>
+	
+</head>
+<body>
+	<canvas id="video-canvas"></canvas>
+	<script type="text/javascript" src="jsmpeg.min.js"></script>
+	<script type="text/javascript">
+	
+		var canvas = document.getElementById('video-canvas');
+		var url = 'ws://localhost:8082/';
+		var player = new JSMpeg.Player(url, {canvas: canvas});
+	</script>
+</body>
+</html>

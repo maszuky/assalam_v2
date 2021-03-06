@@ -1,0 +1,31 @@
+{
+  "name": "assalamcgl",
+  "version": "1.0.0",
+  "description": "Aplikasi Jadwal Sholat untuk TV Masjid As-Salam",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:linux": "electron-builder --linux"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "As-Salam Team <iesien22@yahoo.com>",
+  "license": "CCO-1.0",
+  "devDependencies": {
+    "electron": "~11.2.3",
+    "electron-builder": "^20.38.5",
+    "electron-packager": "^15.2.0"
+  },
+  "build": {
+    "appId": "com.masjid.assalamcgl",
+    "linux": {
+      "target": [
+        "deb",
+        "rpm"
+      ],
+      "category": "Utility"
+    }
+  },
+  "dependencies": {
+    "node-rtsp-stream": "0.0.9"
+  }
+}
